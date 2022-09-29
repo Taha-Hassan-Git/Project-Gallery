@@ -10,13 +10,23 @@ body {
     background: var(--color2);
 }
 .cards {
-    background-color: var(--color3);
+
 }
 
 .card {
     flex: 0 1 calc(25% - 1em);
     background-color: var(--color1);
+}
+
+h1 {
     text-align: center;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 40em) {
