@@ -1,0 +1,39 @@
+:root {
+    --color1: #DFC7ED;
+    --color2: #C7EDD9;
+    --color3: #A19887;
+    --color4: #ECE7DE;
+    --color5: #9A8FA1;
+}
+
+body {
+    background: var(--color2);
+}
+.cards {
+    background-color: var(--color3);
+}
+
+.card {
+    flex: 0 1 calc(25% - 1em);
+    background-color: var(--color1);
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
