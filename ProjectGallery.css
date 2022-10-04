@@ -9,17 +9,19 @@
 body {
     background: var(--color2);
 }
-.cards {
-
-}
 
 .card {
     
     background-color: var(--color1);
+    text-align: center;
 }
 
 h1 {
     text-align: center;
+}
+
+p {
+    text-align: left;
 }
 
 img {
@@ -27,6 +29,29 @@ img {
     border: 0;
     width: 100%;
     height: auto;
+}
+
+.button {
+  background-color: var(--color1);
+  border: 2px solid black;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.button:hover {
+    background-color: var(--color4);
+    padding: 6px 16px;
 }
 
 @media screen and (min-width: 35em) {
