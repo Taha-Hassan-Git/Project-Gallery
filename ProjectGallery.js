@@ -1,8 +1,9 @@
-function myFunction() {
-    var text = document.getElementById("animation");
-    if (text.style.display === "none") {
-      text.style.display = "block";
+function myFunction(button) {
+    var text = button.name;
+    var myDiv = document.getElementById(text);
+    if (myDiv.style.display === "none") {
+      myDiv.style.display = "block";
     } else {
-      text.style.display = "none";
+      myDiv.style.display = "none";
     }
-  }
+}
