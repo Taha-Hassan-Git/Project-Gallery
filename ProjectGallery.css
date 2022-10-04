@@ -22,6 +22,10 @@ h1 {
 
 p {
     text-align: left;
+    padding: 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 500;
 }
 
 img {
