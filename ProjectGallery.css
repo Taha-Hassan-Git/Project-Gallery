@@ -11,9 +11,19 @@ body {
 }
 
 .card {
-    
     background-color: var(--color1);
     text-align: center;
+    border: 2px solid black;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 5px;
 }
 
 h1 {
@@ -30,9 +40,14 @@ p {
 
 img {
     display: block;
-    border: 0;
     width: 100%;
     height: auto;
+    border: 1px solid black;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
 }
 
 .button {
