@@ -1,3 +1,9 @@
+tohide = document.getElementsByClassName("tohide");
+
+for (i in tohide){
+  tohide[i].style.display = "none";
+}
+
 function myFunction(button) {
     var text = button.name;
     var myDiv = document.getElementById(text);

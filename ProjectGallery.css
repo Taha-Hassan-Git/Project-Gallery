@@ -10,6 +10,10 @@ body {
     background: var(--color2);
 }
 
+.tohide{
+    display: none;
+}
+
 .card {
     background-color: var(--color1);
     text-align: center;
