@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ProjectGallery.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <section class="cards">
+                <article class="card">
+                    <img src="ProjectPic.jpg">
+                    <h1>Hobby Page</h1>
+                    <div id="hobbypage" class="tohide">
+                    <p>This was the first webpage I ever made! A brief look at one of my favourite hobbies, Brazillian Jiu Jitsu. I think the combination of technical, procedural thinking combined with a breakneck pace and high stakes make this one of the most exciting sports in the world.</p>
+                    </div>
+                    <button class="button" name="hobbypage" onclick="myFunction(this)">Show</button>
+                </article>
+                <article class="card">
+                    <img src="ProjectPic.jpg">
+                    <h1>Comment Box</h1>
+                    <div id="commentbox" class="tohide">
+                    <p>A feedback form that I had some fun making, my first real crack at using javascript for DOM manipulation. Would be great to have included email validation but I don't think I'll have time.
+                    </p>
+                    </div>
+                    <button class="button" name="commentbox" onclick="myFunction(this)">Show</button>
+                </article>
+                <article class="card">
+                    <img src="ProjectPic.jpg">
+                    <h1>Movie Data</h1>
+                    <div id="moviedata" class="tohide">
+                    <p>I probably learned the most while working on this project. I also tried to approach the design in a more thoughtful way. I went for a Wes Anderson theme. I use a paper-like texture for the cards and the background is a scan of Wes-Anderson themed wallpaper. I would like to have managed more of a grainy naturalistic feel to the design. I also would like to have included sort and search functions. The code is also quite messy and repeats things a fair amount, something that is much lessof a problem in the website feature I did afterwards.
+                    </p>
+                    </div>
+                    <button class="button" name="moviedata" onclick="myFunction(this)">Show</button>
+                </article>
+                <article class="card">
+                    <img src="ProjectPic.jpg">
+                    <h1>Feature</h1>
+                    <div id="feature" class="tohide">
+                    <p>I applied everything I had learned and then some while making this, and it's the project I'm most proud of. Though of course I'm far from satisfied with it. Everyone I've showed it to has immediately attempted to interact with the circles in some way, so it would be great to implement that at some point. Though I would like to add friction as a first measure.</p>
+                    </div>
+                    <button class="button" name="feature" onclick="myFunction(this)">Show</button>
+                </article>
+            </section>
+        </div>
+        <script src="ProjectGallery.js" async defer></script>
+    </body>
+</html>

@@ -1,8 +1,8 @@
 :root {
-    --color1: #DFC7ED;
-    --color2: #C7EDD9;
+    --color1: #14213d;
+    --color2: #e5e5e5;
     --color3: #A19887;
-    --color4: #ECE7DE;
+    --color4: #ffaf1b;
     --color5: #9A8FA1;
 }
 
@@ -11,23 +11,36 @@ body {
 }
 
 .card {
-    background-color: var(--color1);
+    background-color: var(--color2);
+    color: var(--color1);
     text-align: center;
-    border: 2px solid black;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
     overflow: hidden;
+    box-shadow: 2px 6px 25px 0px rgba(117,117,117,0.9);
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 1px 2px 5px;
 }
 
 h1 {
+    font-size: 20px;
     text-align: center;
+    color: var(--color4);
+    position: relative;
+    z-index: 2;
+}
+h1::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #14213d;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 p {
@@ -43,15 +56,10 @@ img {
     width: 100%;
     height: auto;
     border: 1px solid black;
-    border-radius: inherit;
-    -webkit-border-radius: inherit;
-    -moz-border-radius: inherit;
-    -ms-border-radius: inherit;
-    -o-border-radius: inherit;
 }
 
 .button {
-  background-color: var(--color1);
+  background-color: var(--color2);
   border: 2px solid black;
   color: black;
   padding: 5px 15px;
@@ -74,10 +82,13 @@ img {
 }
 
 @media screen and (min-width: 35em) {
+    h1 {
+        font-size: 20px;
+    }
     .cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .card {
@@ -87,6 +98,9 @@ img {
 
 @media screen and (min-width: 60em) {
 
+    h1{
+        font-size: 35px;
+    }
     .card {
         flex: 0 1 calc(50% - 1em);
         max-width: 40em;
